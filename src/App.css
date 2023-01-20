@@ -149,3 +149,8 @@ input[type='number'] {
 .list li:hover .delete-btn {
   opacity: 1;
 }
+
+button:disabled {
+    cursor: not-allowed;
+    background-color: dimgray;
+}
