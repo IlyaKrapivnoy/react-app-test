@@ -17,6 +17,8 @@ const AddTransaction = () => {
         }
 
         addTransaction(newTransaction);
+        setText('');
+        setAmount(0);
     }
 
     return (
@@ -44,7 +46,7 @@ const AddTransaction = () => {
                         placeholder='Enter amount...'
                     />
                 </div>
-                <button className='btn'>Add transaction</button>
+                <button className='btn' disabled={!text || !amount}>Add transaction</button>
             </form>
         </>
     );
