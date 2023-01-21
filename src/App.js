@@ -1,13 +1,13 @@
 import "./App.css";
-import Header from "./components/Header";
-import TransactionList from "./components/TransactionList";
-import AddTransaction from "./components/AddTransaction";
+import Header from "./components/expencesTracker/Header";
+import TransactionList from "./components/expencesTracker/TransactionList";
+import AddTransaction from "./components/expencesTracker/AddTransaction";
 import { GlobalProvider } from "./context/GlobalState";
-import Balance from "./components/Balance";
-import IncomeExpenses from "./components/IncomeExpenses";
+import Balance from "./components/expencesTracker/Balance";
+import IncomeExpenses from "./components/expencesTracker/IncomeExpenses";
 import React from "react";
-import ChurchTax from "./components/ChurchTax";
-import AnnualAmount from "./components/AnnualAmount";
+import ChurchTax from "./components/expencesTracker/ChurchTax";
+import AnnualAmount from "./components/expencesTracker/AnnualAmount";
 
 function App() {
   return (
