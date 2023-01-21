@@ -154,3 +154,16 @@ button:disabled {
     cursor: not-allowed;
     background-color: dimgray;
 }
+
+.counts-field {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #bbb;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.count-inner-block {
+    display: flex;
+    flex-direction: column;
+}
