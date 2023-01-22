@@ -1,20 +1,20 @@
 import "./App.css";
-import Header from "./components/expencesTracker/Header";
-import TransactionList from "./components/expencesTracker/TransactionList";
-import AddTransaction from "./components/expencesTracker/AddTransaction";
+import Header from "./components/expensesTracker/Header";
+import TransactionList from "./components/expensesTracker/TransactionList";
+import AddTransaction from "./components/expensesTracker/AddTransaction";
 import { GlobalProvider } from "./context/GlobalState";
-import Balance from "./components/expencesTracker/Balance";
-import IncomeExpenses from "./components/expencesTracker/IncomeExpenses";
+import Balance from "./components/expensesTracker/Balance";
+import IncomeExpenses from "./components/expensesTracker/IncomeExpenses";
 import React from "react";
-import ChurchTax from "./components/expencesTracker/ChurchTax";
-import AnnualAmount from "./components/expencesTracker/AnnualAmount";
+import ChurchTax from "./components/expensesTracker/ChurchTax";
+import AnnualAmount from "./components/expensesTracker/AnnualAmount";
 
 function App() {
   return (
     <GlobalProvider>
       <Header />
       <div className="container">
-        <Balance />
+        <Balance title="Your Balance" />
         <IncomeExpenses />
         <div className="counts-field">
           <ChurchTax />
