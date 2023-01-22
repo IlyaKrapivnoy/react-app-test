@@ -1,8 +1,9 @@
-import React, { useContext } from "react";
+import * as React from "react";
+import { useContext } from "react";
 import { GlobalContext } from "../../context/GlobalState";
 import UseTotal from "../../hooks/useTotal";
 
-const ChurchTax = () => {
+const ChurchTax = ({ title }: { title: string }) => {
   const { transactions } = useContext(GlobalContext);
   const total = UseTotal({ transactions });
 
@@ -10,7 +11,7 @@ const ChurchTax = () => {
 
   return (
     <div className="count-inner-block">
-      <h4>Church Tax - 10%</h4>
+      <h4>{title}</h4>
       <h1>{churchTax}</h1>
     </div>
   );
