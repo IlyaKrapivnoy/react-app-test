@@ -1,5 +1,5 @@
 import React from 'react';
-import GlobalContext from '../../context/GlobalState';
+import { GlobalContext } from '../../context/GlobalState';
 import useTotal from '../../hooks/useTotal';
 
 const Balance = ({ title }: { title: string }) => {
