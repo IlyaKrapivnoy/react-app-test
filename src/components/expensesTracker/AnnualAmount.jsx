@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import { GlobalContext } from "../../context/GlobalState";
-import UseTotal from "../../hooks/useTotal";
+import useTotal from '../../hooks/useTotal';
 
 const AnnualAmount = () => {
   const { transactions } = useContext(GlobalContext);
-  const total = UseTotal({ transactions });
+  const total = useTotal({ transactions });
 
   const annualAmount = (total * 12).toFixed(2);
 

@@ -4,7 +4,7 @@ import Header from "./components/expensesTracker/Header";
 import TransactionList from "./components/expensesTracker/TransactionList";
 import AddTransaction from "./components/expensesTracker/AddTransaction";
 import { GlobalProvider } from "./context/GlobalState";
-import IncomeExpenses from "./components/expensesTracker/IncomeExpenses";
+import IncomeExpenses from './components/expensesTracker/IncomeExpenses.jsx';
 import ChurchTax from "./components/expensesTracker/ChurchTax";
 import AnnualAmount from "./components/expensesTracker/AnnualAmount";
 import Balance from "./components/expensesTracker/Balance";
