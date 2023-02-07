@@ -1,15 +1,12 @@
 import React, { useContext } from 'react';
 import { GlobalContext } from '../../context/GlobalState';
-
-interface Transaction {
-    amount: number;
-}
+import { ITransaction } from '../../types/data';
 
 const IncomeExpenses = () => {
     const { transactions } = useContext<GlobalContext>(GlobalContext);
 
     const amounts: number[] = transactions.map(
-        (transaction: Transaction) => transaction.amount
+        (transaction: ITransaction) => transaction.amount
     );
 
     const income: string = amounts
