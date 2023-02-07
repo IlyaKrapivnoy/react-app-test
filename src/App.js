@@ -11,19 +11,19 @@ import Balance from "./components/expensesTracker/Balance";
 
 function App() {
   return (
-    <GlobalProvider>
-      <Header />
-      <div className="container">
-        <Balance title="Your Balance" />
-        <IncomeExpenses />
-        <div className="counts-field">
-          <ChurchTax title="Church Tax - 10%" />
-          <AnnualAmount />
-        </div>
-        <TransactionList />
-        <AddTransaction />
-      </div>
-    </GlobalProvider>
+      <GlobalProvider>
+          <Header title='Expanse Tracker' />
+          <div className='container'>
+              <Balance title='Your Balance' />
+              <IncomeExpenses />
+              <div className='counts-field'>
+                  <ChurchTax title='Church Tax - 10%' />
+                  <AnnualAmount />
+              </div>
+              <TransactionList />
+              <AddTransaction />
+          </div>
+      </GlobalProvider>
   );
 }
 
